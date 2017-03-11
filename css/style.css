@@ -1,0 +1,6 @@
+body {background-image:url("../img/labyrinth.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;}
+
+img 	{position:absolute;
+	 bottom:0px;}
