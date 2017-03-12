@@ -1,40 +1,35 @@
-$(document).keydown(function(key) {
+$(document).ready(function() {
+    $(document).keydown(function(key) {
+        switch(key.which) {
+			// Left arrow key pressed
+			case 37:
+				$('#supermario').css({"position":"absolute","left":"-=10px",});
+				break;
+			// Up Arrow Pressed
+			case 38:
+				$('#supermario').css({"position":"absolute","top":"-=10px",});
+				break;
+			// Right Arrow Pressed
+			case 39:
+				$('#supermario').css({"position":"absolute","left":"+=10px",});
+				break;
+			// Down Arrow Pressed
+			case 40:
+				$('#supermario').css({"position":"absolute","top":"+=10px",});
+				break;
+			default:
+			alert("Wrong Taste!");
 
+		}
+	});
+/*
+function meet(){
+	if $('#supermario').css({"position":"absolute","top":"=50%","right":"0px"}){
+		alert("You Win!!!!");
+	}
+}
 
-	switch(key.which){
+meet();
+*/
 
-		case 40:
-		$("#supermario").css({
-			"position":"absolute",
-			"bottom":"-=15px",
-		})
-		break;
-		case 39:
-		$("#supermario").css({
-			"position":"absolute",
-			"left":"+=15px;"
-		})
-		break;
-
-		case 38:
-		$("#supermario").css({
-			"position":"absolute",
-			"bottom":"+=15px",
-		})
-		break;
-		case 37:
-		$("#supermario").css({
-			"position":"absolute",
-			"right":"+=15px;"
-		})
-		break;
-		default:
-		alert("wrong taste!")
-		break;
-
-
-
-	};
-
-
-})
+});
