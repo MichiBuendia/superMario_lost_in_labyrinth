@@ -2,5 +2,15 @@ body {background-image:url("../img/labyrinth.jpg");
       background-repeat: no-repeat;
       background-position: center center;}
 
-img 	{position:absolute;
-	 bottom:0px;}
+#supermario	{position:absolute;
+	bottom:0px;
+  right:50px;
+  }
+
+#princesspeach {
+       position:absolute;
+  	   bottom:0px;
+       right:45%;
+       width: 50px;
+       height: 70px;
+}

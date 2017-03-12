@@ -1,26 +1,40 @@
-$( document ).keydown(function(press) {
-	console.log(press);
-	
-	switch(press.which)
-	
-
-		case
+$(document).keydown(function(key) {
 
 
-		case
+	switch(key.which){
+
+		case 40:
+		$("#supermario").css({
+			"position":"absolute",
+			"bottom":"-=15px",
+		})
+		break;
+		case 39:
+		$("#supermario").css({
+			"position":"absolute",
+			"left":"+=15px;"
+		})
+		break;
+
+		case 38:
+		$("#supermario").css({
+			"position":"absolute",
+			"bottom":"+=15px",
+		})
+		break;
+		case 37:
+		$("#supermario").css({
+			"position":"absolute",
+			"right":"+=15px;"
+		})
+		break;
+		default:
+		alert("wrong taste!")
+		break;
 
 
-		case
 
-
-		case
-
-
-		default
-
-
-
-
+	};
 
 
 })
